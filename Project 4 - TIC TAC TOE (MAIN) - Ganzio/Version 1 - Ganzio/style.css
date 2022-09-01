@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.rosso{
+    background-color:red;
+}
+.blu{
+    background-color:blue;
+}
+.gialla{
+    background-color:goldenrod;
+}
+.dimensioni{
+    width: 200px;
+    height: 200px;
+}
+.bordi{
+    border : 1px solid black;
+}
+
+.mossa{
+    text-align: center;
+    font-size:x-large;
+    
+}
+.centrato{
+    justify-content:center;
+    align-items:center;
+}
+
+
+

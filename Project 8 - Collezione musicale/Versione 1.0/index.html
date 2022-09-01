@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <title>My music - Raccolta musicale</title>
+</head>
+
+<body class="flex flex-column flex-center">
+  <header class="header">
+    <center class="spaced-header">
+      <h1>My music - Raccolta musicale</h1>
+    </center>
+
+  </header>
+  <section class="flex flex-center border round-border">
+    <form>
+      <label for="nomeArtista">Nome dell'artista</label>
+      <input name="nomeArtista" type="text" placeholder="artista" id="nameArtista">
+      <label for="nomeAlbum">Nome dell'album</label>
+      <input name="nomeAlbum" type="text" placeholder="album" id="nameAlbum">
+      <label for="nomeCanzoni">Nome delle canzoni</label>
+      <input name="nomeCanzoni" type="text" placeholder="canzoni" id="nameCanzoni">
+      <label for="dataAlbum">Data uscita dell'album</label>
+      <input name="dataAlbum" type="text" placeholder="data" id="dateAlbum">
+      <!-- <label for="imgAlbum">Copertina album (link)</label>
+      <input type="text" name="imgAlbum" placeholder="link" id="linkImg"> -->
+
+
+      <button type="button" onclick="newEntry()">New Entry</button>
+      <!-- <input class="centered-btn" type="submit" placeholder="Submit" onclick="addItem()">
+      <input class="centered-btn" type="reset" placeholder="Reset"> -->
+
+    </form>
+  </section>
+
+
+
+  <section>
+    <div class="collection border flex" id="collection">
+      <div class="item border item-background hidden" onclick="getSongs(event)">
+        <!-- <img src="https://i.pinimg.com/736x/8f/f0/e4/8ff0e43731333a09941818e30fe101d3--the-elephants-lp.jpg"
+          class="imagineArtista"> -->
+        <p class="nomeArtista">Nome artista</p>
+        <p class="nomeAlbum">Nome album</p>
+        <p class="nomeCanzoni hidden">Pepe e cacio, la merda, cucco e pucco, gennaro in gennaio, la ricerca della figa
+        </p>
+        <p class="dataAlbum">Data album</p>
+        <p class="numIndex hidden">0</p>
+        <button id="removeInsertion" onclick="removeEntry(event)">Rimuovi</button>
+      </div>
+
+
+
+    </div>
+    <button id="alphbeticalOrder" onclick="orderAlphabetical()">Ordina in ordine alfabetico</button>
+    <button id="insertOrder" onclick="orderByIndex()">Ordina in ordine di inserimento</button>
+  </section>
+
+  <section>
+    <h2>Canzoni :</h2>
+    <div class="songlist">
+      <button onclick="songlistClear()">Clear</button>
+    </div>
+  </section>
+
+</body>
+
+</html>

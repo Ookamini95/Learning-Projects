@@ -1,0 +1,55 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.board{
+    border: 2px solid black;
+    width: fit-content;
+    height: auto;
+}
+
+.tile{
+    border: 5px double purple;
+    width: 100px;
+    height: 100px;
+}
+
+.board-position{
+    justify-content: center;
+    margin-top: 3rem;
+    /* align-items: center; */
+}
+
+.position{
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    background-color: red;
+}
+
+#title{
+    margin-left: 42%;
+    margin-right: 40%;
+    margin-bottom: -3rem;
+}

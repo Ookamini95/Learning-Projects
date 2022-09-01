@@ -1,0 +1,21 @@
+1.0 Rifare progetto 8 come dice Ganzo FATTO swag swag
+
+- Photografy website
+
+https://www.pexels.com/it-it/api/ -> rimediare le immagini
+
+563492ad6f91700001000001d2ccecb60128454ca90216fabea04a20
+
+barra di ricerca -> chiedo a pexel img -> visualizzo a schermo la risposta.
+
+table html
+
+landing page : ganzio whatsapp
+la landig page deve avere le carattistiche:
+
+1. le img sono nella tabella
+
+2. quando muovo le dimensione della finestra le immagini si ridimenzionano
+
+3. se lo schermo è sup ai 650px .> 5 colonne, sotto, 3 colonne (media
+query)

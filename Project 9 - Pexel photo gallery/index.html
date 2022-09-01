@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image search</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="searchbox flex row-reverse">
+            <div>
+                <form onsubmit="submitHandler(event)">
+                    <input type="text" placeholder="What image are you looking for?" class="searchbar">
+                    <input type="submit" class="searchbutton" value="🔍">
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="image-display">
+        <table>
+            <tr>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="hide-on-query image-show"></td>
+                <td><img src="banana_test.jpg" class="hide-on-query image-show"></td>
+            </tr>
+            <tr>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="image-show"></td>
+                <td><img src="banana_test.jpg" class="hide-on-query image-show"></td>
+                <td><img src="banana_test.jpg" class="hide-on-query image-show"></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer><a href="https://www.pexels.com">Photos provided by Pexels</a></footer>
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

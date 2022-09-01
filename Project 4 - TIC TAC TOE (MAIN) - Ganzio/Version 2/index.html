@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+<h1 id="title">TIC TAC TOE</h1>
+    <div class="flex row board-position" id="container">
+        <div class="board flex column">
+            <div class="tile flex position" id="0" onclick="displaySimbol(event)">
+                <p class="move"></p>
+            </div>
+            <div class="tile flex position" id="4" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="8" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="12" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+        </div>
+        <div class="board flex column">
+            <div class="tile flex position" id="1" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="5" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="9" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="13" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+        </div>
+        <div class="board flex column">
+            <div class="tile flex position" id="2" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="6" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="10" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="14" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+        </div>
+        <div class="board flex column">
+            <div class="tile flex position" id="3" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="7" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="11" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+            <div class="tile flex position" id="15" onclick="displaySimbol(event)">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="endgame red">
+        <p>player ha vinto</p>
+    </div>
+</body>
+
+</html>

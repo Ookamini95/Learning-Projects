@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.searchbox{
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.searchbar{
+    width: 300px;
+    height: 1.5rem;
+    border-radius: 5%;
+    border: 3px solid cyan;
+}
+
+.searchbar:hover{
+    border-color: white;
+}
+
+.searchbutton{
+    /* border-radius: 100%; */
+    border: 0px solid #f2f2f2;
+    background-color: rgb(202, 246, 246);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.searchbutton:hover{
+    border-color: white;
+    border-width: 3px;
+    transform: translateX(4px);
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.image-display{
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.hidden_query{
+    display: none;
+}
+
+@media (max-width: 650px){
+    .hidden_query{
+        display:block;
+    }
+    .hide_on_query{
+        display:none;
+    }
+}
+/* @media */

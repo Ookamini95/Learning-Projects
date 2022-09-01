@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <title>My music - Raccolta musicale</title>
+</head>
+
+<body class="flex flex-column flex-center">
+  <header class="header">
+    <center class="spaced-header">
+      <h1>My music - Raccolta musicale</h1>
+    </center>
+
+  </header>
+  <section class="flex flex-center border round-border">
+    <form onsubmit="submitHandler(event)">
+      <label for="nomeArtista">Nome dell'artista</label>
+      <input name="nomeArtista" type="text" placeholder="artista" id="nameArtista">
+      <label for="nomeAlbum">Nome dell'album</label>
+      <input name="nomeAlbum" type="text" placeholder="album" id="nameAlbum">
+      <label for="nomeCanzoni">Nome delle canzoni</label>
+      <input name="nomeCanzoni" type="text" placeholder="canzoni" id="nameCanzoni">
+      <label for="dataAlbum">Data uscita dell'album</label>
+      <input name="dataAlbum" type="text" placeholder="data" id="dateAlbum">
+
+      <input type="submit" value="Submit Entry">
+    </form>
+  </section>
+  <button onclick="saveEntries()">Salva collezione</button>
+  <button onclick="loadEntries()">Carica collezione</button>
+
+
+
+  <section>
+    <div class="collection border flex" id="collection"></div>
+    <button id="alphbeticalOrder" onclick="orderAlphabetical()">Ordina in ordine alfabetico</button>
+    <button id="insertOrder" onclick="orderByIndex()">Ordina in ordine di inserimento</button>
+  </section>
+
+  <section>
+    <h2>Canzoni :</h2>
+    <div class="songList"></div>
+    </div>
+  </section>
+
+</body>
+
+</html>

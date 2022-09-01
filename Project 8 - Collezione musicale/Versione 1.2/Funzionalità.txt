@@ -1,0 +1,11 @@
+1. utente deve prendere un form e scrivere : nome album, canzoni in album, autore, data (form)
+2. poter mostrare le cose che gli utenti hanno inserito
+3. gli utenti devono poterle cancellare.
+
+punti bonus
+1. tutto in una singola pagina
+2. deve avere un header fixed
+3. footer
+4. responsive fino ad una misura di 480x300px
+5. design non di minchia
+6. pulsante che mi ordina gli album in base alla data o all'inserimento.
